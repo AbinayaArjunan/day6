@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <body>
+        <script>
+            
+            class Circle{
+                //constructor(){
+                    //this.radius =1.0
+                    //this.color="red"
+                //}
+                //constructor(radius){
+                    //this.radius =1.0
+                    //this.color="red"
+                constructor(radius,color){
+                    this.radius=1.0;
+                    this.color ="red";
+                }
+                getRadius(){
+                    return this.radius;   
+                }
+                setRadius(newname){
+                    this.radius = 2.0;
+                }
+                getColor(){
+                    return this.color;
+                }
+                setColor(newname){
+                    this.color="blue"
+                }
+                toString(){
+                    return this.string="Circle[radius=this.radius,color=this.color]"
+                }
+                getArea(){
+                    let area=3.14*this.radius*this.radius;
+                    return this.area;
+                }
+                getCircumference(){
+                    let circumference=2*this.radius;
+                    return this.circumference;
+                }
+            }
+            let b= new Circle();
+            console.log(b.getRadius())
+        </script>
+    </body>
+</head>
